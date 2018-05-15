@@ -1,7 +1,7 @@
 body {
             background: url('SnowLandJP.jpg') no-repeat scroll;
             background-attachment: fixed;
-            background-size: 50% 100%;
+            background-size: 100% 50%;
             min-height: 800px;
         }
         .boxed {
