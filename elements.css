@@ -12,7 +12,10 @@
 
 /* Style the dropdown container */
 .dropdown {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: auto;
     display: inline-block;
 }
 
@@ -64,5 +67,11 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}/* Dropdown menu Date alignment */
+.date-container {
+    position: relative;
+    width: 100%;
+    right: auto;
+    left: 20px;
+    top: -10px;
 }
-/* Code for embed positioning */
