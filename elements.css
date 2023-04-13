@@ -13,7 +13,7 @@
 /* Style the dropdown container */
 .dropdown {
     position: absolute;
-    top: 20px;
+    top: -165px;
     left: 20px;
     right: auto;
     display: inline-block;
@@ -73,5 +73,5 @@
     width: 100%;
     right: auto;
     left: 20px;
-    top: -10px;
+    top: -190px;
 }
