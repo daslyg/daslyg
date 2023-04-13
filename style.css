@@ -1,10 +1,12 @@
+/*Edit body elements of the page*/
 body {
-            background-img:url("https://daslyg.github.io/justiceworks/backrmground.jpg") no-repeat scroll; 
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            min-height: 800px;
-        }
-        .boxed {
-          border: 1px solid #ffffff;
-          background-color: #397D02;
-        }
+    background-img: url("https://daslyg.github.io/justiceworks/backrmground.jpg") no-repeat scroll;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 800px;
+}
+
+.boxed {
+    border: 1px solid #ffffff;
+    background-color: #397D02;
+}
