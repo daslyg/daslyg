@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<body background="backrmground.jpg">
-  <body style="background-color:#868686;"
-  <head>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <link rel="shortcut icon" href="favicon.ico"/>
-  <title>The Works of DaslyG</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="elements.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>The Works of DaslyG</title>
 </head>
-<div>
-    <p style="position:fixed;z-index: -1;right:30px; left:55px; top:25px ;font-size:35px;color:#397D02;font-family:Georgia;">The Works of DaslyG</p>
-  </div>
-<p style="position:relative;text-align:center;font-size:14px;color:#397D02;font-family:courier new;">Written and coded by DaslyG</p>
-<center>
-<img src="favicon.ico"/>
-</center>
-<p style="position:relative;z-index: -2;font-size:20px;color:#600660;font-family:impact;">Links to me on other websites</p>
-<div class="boxed">
-<table style="font-size:20px;width:100%;text-align:center;">
-<td><a href="http://daslyg.deviantart.com">My DeviantArt</a></td>
-<td><a href="https://www.youtube.com/channel/UCs0Hv8B4e_st0t0sw3MMYBg">My YouTube</a></td>
-<td><a href="http://steamcommunity.com/id/soulunardi">My Steam</a></td>
-<td><a href="http://twitter.com/gdasly">My Twitter</a></td>
-<td><a href="http://daslyg.tumblr.com">My Tumblr</a></td>
-<td><a href="https://instagram.com/daslyg1">My Instagram</a></td>
-<td><a href="https://soundcloud.com/daslyg">My SoundCloud</a></td>
-<td><a href="https://www.twitch.tv/daslyg">My Twitch</a></td>
-<td><a href="https://daslyg.bandcamp.com">My Bandcamp</a></td>
-</table>
-</div>
-<b style="font-size:20px;font-family:impact;color:#ffffff">2017 /</b>
-<b style="font-size:20px;font-family:impact;color:#ff0000">2022</b>
-<div class="boxed">
-<b style="font-size:20px;font-family:ariel;color:#000000">Please note that any other websites that I am on that are not listed here could be listed on one of the sites above.</b>
-  <p style="font-size:20px;font-family:ariel;color:#397D02">My only plan is to get better, I am otherwise unorganized...</p>
-</div>
-</div>
+<body style="background-color: #420dad;">
+    <div>
+        <p style="position: absolute; top: 0; right: 20px; z-index: -1; font-size: 35px; color: #dad420; font-family: Microsoft JhengHei UI; text-align: right;">The Works of DaslyG</p>
+    </div>
+    <p style="position: relative; text-align: center; font-size: 14px; color: #dad420; font-family: Microsoft JhengHei UI;">Written and coded by DaslyG</p>
+    <center>
+        <img src="favicon.ico" />
+    </center>
+    <!-- Divider for the dropdown menu & date -->
+    <div class="container">
+        <div class="date-container">
+            <b style="font-size:20px;font-family:impact;color:#ffffff">2017 /</b>
+            <span id="date"><b>2023</b></span>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><b style="font-family: Microsoft JhengHei UI; font-size: 14px;">My Social Media</b></button>
+            <div class="dropdown-content">
+                <a href="https://toyhou.se/DaslyG" target="_blank">Toyhouse</a>
+                <a href="http://daslyg.deviantart.com" target="_blank">DeviantArt</a>
+                <a href="https://www.youtube.com/channel/UCs0Hv8B4e_st0t0sw3MMYBg" target="_blank">YouTube</a>
+                <a href="http://twitter.com/gdasly" target="_blank">Twitter</a>
+                <a href="http://daslyg.tumblr.com" target="_blank">Tumblr</a>
+                <a href="https://instagram.com/daslyg1" target="_blank">Instagram</a>
+                <a href="https://soundcloud.com/daslyg" target="_blank">SoundCloud</a>
+                <a href="https://www.twitch.tv/daslyg" target="_blank">Twitch</a>
+                <a href="https://daslyg.bandcamp.com" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown menu (date) script -->
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Get the year from the date span
+        const dateSpan = document.getElementById('date');
+        const dateYear = parseInt(dateSpan.textContent);
+
+        // Check if the date has already passed
+        if (currentYear > dateYear) {
+            // If the date has passed, add the style here
+            // Get the <b> element
+            const boldText = document.querySelector('#date b');
+
+            boldText.style.fontSize = '20px';
+            boldText.style.fontFamily = 'impact';
+            boldText.style.color = 'red';
+        } else {
+            // If the date has not yet passed, keep the existing style
+            // Get the <b> element
+            const boldText = document.querySelector('#date b');
+
+            // Set the style properties
+            boldText.style.fontSize = '20px';
+            boldText.style.fontFamily = 'impact';
+            boldText.style.color = '#ffffff';
+        }
+    </script>
+</body>
+</html>
