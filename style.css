@@ -1,6 +1,6 @@
 /*Edit body elements of the page*/
 body {
-    background-img: url("https://daslyg.github.io/justiceworks/backrmground.jpg") no-repeat scroll;
+    background-img: url("backrmground.jpg") no-repeat scroll;
     background-attachment: fixed;
     background-size: 100% 100%;
     min-height: 800px;
