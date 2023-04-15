@@ -14,7 +14,7 @@
 .dropdown {
     position: absolute;
     top: -165px;
-    left: 20px;
+    left: 40px;
     right: auto;
     display: inline-block;
 }
@@ -72,6 +72,6 @@
     position: relative;
     width: 100%;
     right: auto;
-    left: 20px;
+    left: 40px;
     top: -190px;
 }
